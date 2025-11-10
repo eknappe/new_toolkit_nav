@@ -1,20 +1,18 @@
-# Lib4RI RDM Services Sunburst Visualization
+# Lib4RI Toolkit Sunburst Visualization
 
-This is an interactive D3.js sunburst diagram showcasing the Research Data Management (RDM) services offered by Lib4RI and the four research institutes within the ETH Domain: Eawag, Empa, PSI, and WSL.
+This is an interactive D3.js sunburst diagram showcasing tools for researchers to use.
 
-This radial space-filling visualization was originally created by [John Stasko](https://sites.cc.gatech.edu/gvu/ii/sunburst/) and traditionally shows the [cumulative values of subtrees](https://eurostat.github.io/d3.sunburst/). It is commonly used to visualize nested objects, in large part becuase it shows the mass of hidden things in each subsection.
+This radial space-filling visualization was originally created by [John Stasko](https://sites.cc.gatech.edu/gvu/ii/sunburst/) and traditionally shows the [cumulative values of subtrees](https://eurostat.github.io/d3.sunburst/). It is commonly used to visualize nested objects, in large part becuase it shows the mass of hidden things in each subsection. This was edited from C.Nunez's script for Lib4RI RDM navigation (https://gitlab.eawag.ch/chase.nunez/rdm_sunburst). 
 
 ## Overview
-This visualization provides a hierarchical view of the RDM services and tools available across the institutes, aligned with the research data lifecycle phases:
+This visualization provides an interactive and hierachical view of the research cycle and is aligned with the tabs of the Lib4RI website (https://stage.lib4ri.ch/):
 
-* **Plan**: Data Management Plans (DMPs), FAIR principles
-* **Collect**: Data acquisition, formats, and metadata
-* **Process & Analyze**: Data processing, analysis tools
-* **Preserve & Share**: Data storage, repositories, publication
-* **Find & Reuse**: Data discovery, reuse, and citation.
+* **Search & Read** 
+* **Data & Research**
+* **Write & Publish**
+* **Evaluate & Share**
 
-Each segment of the sunburst represents a specific service or tool, allowing users to explore the interconnectedness and offerings within each phase.
-There is quite a bit of overlap with the website erit large, so some trimming is clearly going to be necessary. 
+There are then subsections within each of the main sections, before guiding the user to specific areas (e.g. tools for document preperation and formatting)
 
 ## Getting Started
 
@@ -24,7 +22,10 @@ https://pages.gitlab.eawag.ch/rdm-nav-b7b63b/
 
 
 2. code was developed here: 
+Code for toolkit visualization:
+https://gitlab.eawag.ch/lib4ri/toolkit-nav
 
+C. Nunez original code:
 https://gitlab.eawag.ch/chase.nunez/rdm_sunburst
 
 3. D3.js inspiration can be found here:
