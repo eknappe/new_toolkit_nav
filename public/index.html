@@ -160,7 +160,29 @@ d3.json("tool.json").then(data => {
 
   path.append("title")
     .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${format(d.value)}`);
-
+ 
+ // wrap text into multiple lines as needed
+  function wrapText(text, maxCharsPerLine = 12) {
+      const words = text.split(' '); //wont break middle of words
+      const lines = [];
+      let currentLine = '';
+      
+      words.forEach(word => {
+          const testLine = currentLine ? `${currentLine} ${word}` : word;
+          if (testLine.length > maxCharsPerLine && currentLine) {
+              lines.push(currentLine);
+              currentLine = word;
+          } else {
+              currentLine = testLine;
+          }
+      });
+      
+      if (currentLine) {
+          lines.push(currentLine);
+      }
+      return lines;
+  }
+    
   const label = g.append("g")
     .attr("pointer-events", "none")
     .attr("text-anchor", "middle")
@@ -176,7 +198,19 @@ d3.json("tool.json").then(data => {
         if (d.depth === 2) return "16px";
         return "11px";
       })
-      .text(d => d.data.name);
+      .each(function(d) {
+          const lines = wrapText(d.data.name);
+          const lineHeight = 1.1; //em units
+          const y = -(lines.length - 1) * lineHeight / 2; //center vertically
+          
+          d3.select(this)
+          .selectAll("tspan")
+          .data(lines)
+          .join("tspan")
+            .attr("x", 0)
+            .attr("dy", (line, i) => i === 0 ? `${y}em` : `${lineHeight}em`)
+            .text(line => line);
+      });
 
   const parent = g.append("circle")
     .datum(root)
