@@ -319,12 +319,13 @@ d3.json("tool.json").then(data => {
       .attrTween("transform", d => () => labelTransform(d.current));
   }
 
+  //changing so hopefully max out on two levels at a time, otherwise the figure becomes massive
   function arcVisible(d) {
-    return d.y1 <= 4 && d.y0 >= 1 && d.x1 > d.x0;
+    return d.y1 <= 3 && d.y0 >= 1 && d.x1 > d.x0;
   }
 
   function labelVisible(d) {
-    return d.y1 <= 4 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.01;
+    return d.y1 <= 3 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.01;
   }
 
   function labelTransform(d) {
