@@ -16,9 +16,8 @@ There are then subsections within each of the main sections, before guiding the 
 
 ## Getting Started
 
-1. hosted version can be found here: 
-
-https://pages.gitlab.eawag.ch/rdm-nav-b7b63b/
+1. hosted version can be found here (to see how it looks) :
+https://pages.gitlab.eawag.ch/toolkit-nav-2f8cd7/
 
 
 2. code was developed here: 
