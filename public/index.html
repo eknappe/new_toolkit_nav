@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Research Lifecycle Sunburst</title>
+  <title>A Researcher's Toolkit</title>
 
   <!-- Font Awesome home icon looks better than drawing a house-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -64,7 +64,7 @@
 <body>
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <script>
-d3.json("flare.json").then(data => {
+d3.json("tool.json").then(data => {
   const width = 928;
   const radius = width / 6;
   const format = d3.format(",d");
@@ -117,8 +117,8 @@ d3.json("flare.json").then(data => {
 
   const g = svg.append("g");
 
-  // Only include depths 1 and 2 (no third-level nodes this time to keep the graphic from taking up too much space on the page)
-  const visibleNodes = root.descendants().slice(1).filter(d => d.depth < 3);
+  // EK edit to see depths 1,2,3 (children + grandchildren)
+  const visibleNodes = root.descendants().slice(1).filter(d => d.depth < 4);
 
   const path = g.append("g")
     .selectAll("path")
@@ -129,7 +129,7 @@ d3.json("flare.json").then(data => {
         while (ancestor.depth > 1) ancestor = ancestor.parent;
         return color(ancestor.data.name);
       })
-      // Show only level 1 at first (depth 1 visible, depth 2 hidden)
+      // Show only level 1 at first (depth 1 visible, depth 2 + 3 hidden)
       .attr("fill-opacity", d => d.depth === 1 ? 0.6 : 0)
       // INITIAL pointer-events: only depth-1 arcs are clickable on load
       .attr("pointer-events", d => d.depth === 1 ? "auto" : "none")

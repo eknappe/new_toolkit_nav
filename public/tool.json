@@ -1,0 +1,291 @@
+{
+  "name": "tool",
+  "children": [
+    {
+      "name": "Search & Read",
+      "children": [
+        {
+          "name": "Finding library services",
+          "size": 150,
+          "link": "<a href='https://www.lib4ri.ch/search?find=&tab=6'></a>"
+        },
+        {
+          "name": "Searching for sources",
+          "children": [
+            {
+              "name": "Finding sources",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#finding-citations'></a>"
+            },
+            {
+              "name": "Accessing sources",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#accessing-sources'></a>"
+            },
+            {
+              "name": "Accessing difficult sources",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#difficult-sources'></a>"
+            },
+            {
+              "name": "Research assistants",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#research-assist'></a>"
+            },
+            {
+              "name": "Performing a systematic literature search",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#sys-lit-search'></a>"
+            }
+          ]
+        },
+        {
+          "name": "Using & managing sources",
+          "children": [
+            {
+              "name": "Reference management",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#ref-manage'></a>"
+            },
+            {
+              "name": "PDF viewer",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#pdf'></a>"
+            },
+            {
+              "name": "Literature summarization",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#lit-sum'></a>"
+            },
+            {
+              "name": "Citation analysis",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/search-read-tools#citation-analysis'></a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Data & Research",
+      "children": [
+        {
+          "name": "Planning your research",
+          "children": [
+            {
+              "name": "Data management plans (DMPs)",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-management-plans-dmps'></a>"
+            },
+            {
+              "name": "Finding datasets",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#datasets'></a>"
+            },
+            {
+              "name": "Note-taking and knowledge management",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#notes'></a>"
+            },
+            {
+              "name": "Project management",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#proj-manage'></a>"
+            },
+            {
+              "name": "Finding an AI tool",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#find-ai'></a>"
+            }
+          ]
+        },
+        {
+          "name": "Coding & programming",
+          "children": [
+            {
+              "name": "Coding repository",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#repos'></a>"
+            },
+            {
+              "name": "Code ecosystems",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#code-ecosystems'></a>"
+            },
+            {
+              "name": "Version control",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#version-control'></a>"
+            },
+            {
+              "name": "Reproducible coding",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#reproducible-coding'></a>"
+            },
+            {
+              "name": "Coding help",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#ai-code'></a>"
+            }
+          ]
+        },
+        {
+          "name": "Visualizations",
+          "children": [
+            {
+              "name": "Figure making",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#fig-making'></a>"
+            },
+            {
+              "name": "Presentations",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#presentations'></a>"
+            }
+          ]
+        },
+        {
+          "name": "Data management",
+          "children": [
+            {
+              "name": "Research data management resources",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#Research-data-management-resources'></a>"
+            },
+            {
+              "name": "Electronic lab notebooks",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#ELN'></a>"
+            },
+            {
+              "name": "Institutional data repository",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#data-repo'></a>"
+            },
+            {
+              "name": "Finding a data repository",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#find-data-repo'></a>"
+            },
+            {
+              "name": "Anonymising data",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#anonymize'></a>"
+            },
+            {
+              "name": "Licenses explained",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#licenses'></a>"
+            },
+            {
+              "name": "Trainings",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/data-research-tools#trainings'></a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Write & Publish",
+      "children": [
+        {
+          "name": "Scientific writing",
+          "children": [
+            {
+              "name": "Outlining and brainstorming",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#brainstorm'></a>"
+            },
+            {
+              "name": "Document preparation & formatting",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#prep'></a>"
+            },
+            {
+              "name": "Writing support",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#writing'></a>"
+            },
+            {
+              "name": "Grammar",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#grammar'></a>"
+            },
+            {
+              "name": "Translating",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#translation'></a>"
+            },
+            {
+              "name": "Plagiarism check",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#plagiarism'></a>"
+            }
+          ]
+        },
+        {
+          "name": "Scientific publishing",
+          "children": [
+            {
+              "name": "Finding OA journals",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#oa-journal'></a>"
+            },
+            {
+              "name": "Journals with OA agreements",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#journal-oa-agree'></a>"
+            },
+            {
+              "name": "Avoiding predatory journals",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#pred-journals'></a>"
+            },
+            {
+              "name": "Institutional publications repository",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#pub-repo'></a>"
+            },
+            {
+              "name": "CC licenses",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#cc'></a>"
+            },
+            {
+              "name": "DOI issuing",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#doi'></a>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Evaluate & Share",
+      "children": [
+        {
+          "name": "Impact & outreach",
+          "children": [
+            {
+              "name": "Research profiles",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/evaluate-and-share-tools#research-id'></a>"
+            },
+            {
+              "name": "Metrics explained",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/evaluate-and-share-tools#metric'></a>"
+            },
+            {
+              "name": "Bibliometrics",
+              "size": 150,
+              "link": "<a href='https://www.lib4ri.ch/evaluate-and-share-tools#bibliometrics'></a>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
