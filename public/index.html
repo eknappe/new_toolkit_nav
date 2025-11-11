@@ -78,18 +78,17 @@ d3.json("tool.json").then(data => {
   d3.partition().size([2 * Math.PI, root.height + 1])(root);
   root.each(d => d.current = d);
 
-  // try to fix so that the "invisible" components arent even being shown
   const maxDepth = root.height;
-  const initialDepthMargin = 1 * 120; //try only account for 1 depth initally
+  const maxVisibleDepth = 2; //trying to not see the invisible layers
 
   const svg = d3.create("svg")
     .attr("viewBox", () => {
-      return [-width / 2 - initialDepthMargin, -width / 2 - initialDepthMargin, width + initialDepthMargin * 2, width + initialDepthMargin * 2];
+      const maxOuterRadius = maxVisibleDepth * radius; //calculate the actual radius at depth 3
+      const labelPadding = 40;
+      const size = maxOuterRadius + labelPadding;
+      return [-size, -size, size * 2, size * 2]
     })
-    .attr("width", "100%")
-    .attr("height:, 100%")
-    .style("font", "10px sans-serif")
-    .style("display", "block");
+    .style("font", "10px sans-serif");
 
   const defs = svg.append("defs");
 
@@ -137,8 +136,6 @@ d3.json("tool.json").then(data => {
       .attr("fill-opacity", d => d.depth === 1 ? 0.6 : 0)
       // INITIAL pointer-events: only depth-1 arcs are clickable on load
       .attr("pointer-events", d => d.depth === 1 ? "auto" : "none")
-      // use display:none for truly hidden elements instead of just lowering the opacity
-      .style("display", d => d.depth === 1 ? null : "none")
       .attr("d", d => arc(d.current));
 
   // click behavior: only act on arcs that are actually visible (fill-opacity > 0). this was a bug that was found by FM. Thanks FM!
@@ -197,8 +194,6 @@ d3.json("tool.json").then(data => {
     .join("text")
       .attr("dy", "0.35em")
       .attr("fill-opacity", d => d.depth === 1 ? 0.6 : 0)
-      //hide labels for non-depth-1 elements
-      .style("display", d => d.depth === 1 ? null : "none")
       .attr("transform", d => labelTransform(d.current))
       .style("font-weight", d => d.depth === 1 ? "bold" : "normal")
       .style("font-size", d => {
