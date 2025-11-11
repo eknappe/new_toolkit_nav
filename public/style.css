@@ -3,24 +3,19 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  hieght: 100%;
 }
 
 body {
   font-family: sans-serif;
 }
 
-/* container for the visualization*/
-#visualization-container,
 svg {
   width:100%,
-  height: 100vh;
+  height: 100%;
   display: block;
-  overflow: hidden;
-}
-
-/* maybe a specific max height...*/
-svg {
-  max-height: 800px;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .navbar {
