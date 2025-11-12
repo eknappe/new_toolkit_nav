@@ -13,7 +13,7 @@
     }
 
     text {
-      font: 10px sans-serif;
+      font: 12px sans-serif;
       text-anchor: middle;
       pointer-events: none;
     }
@@ -79,7 +79,7 @@ d3.json("tool.json").then(data => {
   root.each(d => d.current = d);
 
   const maxDepth = root.height;
-  const maxVisibleDepth = 2; //trying to not see the invisible layers
+  const maxVisibleDepth = 2.85; //trying to not see the invisible layers
 
   const svg = d3.create("svg")
     .attr("viewBox", () => {
@@ -88,7 +88,7 @@ d3.json("tool.json").then(data => {
       const size = maxOuterRadius + labelPadding;
       return [-size, -size, size * 2, size * 2]
     })
-    .style("font", "10px sans-serif");
+    .style("font", "12px sans-serif");
 
   const defs = svg.append("defs");
 
