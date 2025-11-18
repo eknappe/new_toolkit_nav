@@ -228,14 +228,9 @@
           "name": "Scientific publishing",
           "children": [
             {
-              "name": "Finding OA journals",
+              "name": "Finding options to publish open access",
               "size": 150,
-              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#oa-journal'></a>"
-            },
-            {
-              "name": "Journals with OA agreements",
-              "size": 150,
-              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#journal-oa-agree'></a>"
+              "link": "<a href='https://www.lib4ri.ch/write-and-publish-tools#oa-options'></a>"
             },
             {
               "name": "Avoiding predatory journals",

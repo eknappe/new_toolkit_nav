@@ -193,12 +193,13 @@ d3.json("tool.json").then(data => {
     .data(visibleNodes)
     .join("text")
       .attr("dy", "0.35em")
-      .attr("fill-opacity", d => d.depth === 1 ? 0.6 : 0)
+      .attr("fill-opacity", d => d.depth === 1 ? 0.8 : 0)
       .attr("transform", d => labelTransform(d.current))
       .style("font-weight", d => d.depth === 1 ? "bold" : "normal")
       .style("font-size", d => {
-        if (d.depth === 1) return "22px";
-        if (d.depth === 2) return "16px";
+        if (d.depth === 1) return "24px";
+        if (d.depth === 2) return "22px";
+        if (d.depth === 3) return "20px";
         return "11px";
       })
       .each(function(d) {
