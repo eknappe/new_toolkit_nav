@@ -195,7 +195,7 @@ d3.json("tool.json").then(data => {
     .data(visibleNodes)
     .join("text")
       .attr("dy", "0.35em")
-      .attr("fill-opacity", d => d.depth === 1 ? 1 : 0) //want labels to be black for ease of reading
+      .attr("fill-opacity", d => d.depth === 1 ? 0.9 : 0) //want labels to be black for ease of reading
       .attr("transform", d => labelTransform(d.current))
       .style("font-weight", d => d.depth === 1 ? "bold" : "normal")
       .style("font-size", d => {
